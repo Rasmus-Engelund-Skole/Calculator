@@ -36,6 +36,17 @@ namespace Calculator.Test.Unit
         }
 
         [Test]
+        public void Calculator_AddTwoNegative()
+        {
+            //Arrange
+
+            //Act
+            double Result = uut.Add(-2.22, -5.22);
+            //Assert
+            Assert.That(Result, Is.EqualTo(-2.22+-5.22));
+        }
+
+        [Test]
         public void Calculator_Multiply2Positive()
         {
             //Arrange
