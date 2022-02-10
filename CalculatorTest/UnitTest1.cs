@@ -78,5 +78,36 @@ namespace Calculator.Test.Unit
             //Assert
             Assert.That(Result, Is.EqualTo(78125));
         }
+        [Test]
+        public void Calculator_DivideBy2()
+        {
+            //Arrange
+
+            //Act
+            double Result = uut.divide(10, 2);
+
+            //Assert
+            Assert.That(Result, Is.EqualTo(5));
+        }
+        [Test]
+        public void Calculator_DivideBy5()
+        {
+            //Arrange
+
+            //Act
+            double Result = uut.divide(10, 5);
+            //Assert
+            Assert.That(Result, Is.EqualTo(2));
+        }
+        [Test]
+        public void Calculator_DivideBy10()
+        {
+            //Arrange
+
+            //Act
+            double Result = uut.divide(10, 10);
+            //Assert
+            Assert.That(Result, Is.EqualTo(1));
+        }
     }
 }

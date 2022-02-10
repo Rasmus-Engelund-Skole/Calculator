@@ -29,5 +29,9 @@ namespace CalculatorApp
         {
             return Math.Pow(x, exp);
         }
+        public double divide(double a, double b)
+        {
+            return a / b;
+        }
     }
 }
