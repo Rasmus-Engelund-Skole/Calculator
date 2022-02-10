@@ -10,3 +10,5 @@ Console.WriteLine("\n");
 Console.WriteLine("Power: {0:N2}", calc.Power(2.22, 4.22));
 Console.WriteLine("\n");
 Console.WriteLine("Divide: {0:N2}", calc.divide(10,2));
+Console.WriteLine("\n");
+Console.WriteLine("Square: {0:N2}", calc.Square(8));

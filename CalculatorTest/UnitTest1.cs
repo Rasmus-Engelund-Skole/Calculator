@@ -90,7 +90,7 @@ namespace Calculator.Test.Unit
             Assert.That(Result, Is.EqualTo(5));
         }
         [Test]
-        public void Calculator_DivideBy5()
+        public void Calculator_DivideByNeg5()
         {
             //Arrange
 
@@ -100,7 +100,7 @@ namespace Calculator.Test.Unit
             Assert.That(Result, Is.EqualTo(2));
         }
         [Test]
-        public void Calculator_DivideBy10()
+        public void Calculator_Divide10()
         {
             //Arrange
 

@@ -36,5 +36,9 @@ namespace CalculatorApp
             else
             return a / b;
         }
+        public double Square(double d)
+        { 
+            return Math.Sqrt(d); 
+        }
     }
 }
