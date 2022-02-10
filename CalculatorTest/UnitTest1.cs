@@ -106,10 +106,9 @@ namespace Calculator.Test.Unit
             //Arrange
 
             //Act
-            double Result = uut.divide(10, 5);
+            double Result = uut.divide(10, -5);
             //Assert
-            Assert.That(Result, Is.EqualTo(2));
-            Assert.That(Result, Is.EqualTo(2067));
+            Assert.That(Result, Is.EqualTo(-2));
         }
         [Test]
         public void Calculator_DivideBy0()
