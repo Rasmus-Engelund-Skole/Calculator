@@ -113,7 +113,6 @@ namespace Calculator.Test.Unit
             Assert.That(Result, Is.EqualTo(15));
         }
 
-
         [Test]
         public void Calculator_PowerOf3()
         {
