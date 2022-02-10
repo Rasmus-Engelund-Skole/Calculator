@@ -36,39 +36,6 @@ namespace Calculator.Test.Unit
         }
 
         [Test]
-        public void Calculator_subtract2positives()
-        {
-            //Arrange
-
-            //Act
-            double Result = uut.Subtract(2.22, 5.22);
-            //Assert
-            Assert.That(Result, Is.EqualTo(2.22 - 5.22));
-        }
-
-        [Test]
-        public void Calculator_subtract_onepositive_onenegative()
-        {
-            //Arrange
-
-            //Act
-            double Result = uut.Subtract(2.22, -5.22);
-            //Assert
-            Assert.That(Result, Is.EqualTo(2.22 - -5.22));
-        }
-
-        [Test]
-        public void Calculator_subtract_2negatives()
-        {
-            //Arrange
-
-            //Act
-            double Result = uut.Subtract(-2.22, -5.22);
-            //Assert
-            Assert.That(Result, Is.EqualTo(-2.22 - -5.22));
-        }
-
-        [Test]
         public void Calculator_Multiply2Positive()
         {
             //Arrange
