@@ -34,7 +34,7 @@ namespace CalculatorApp
             if (b == 0)
                 return 0;
             else
-            return a / b;
+                return a / b;
         }
         public double Square(double d)
         { 
