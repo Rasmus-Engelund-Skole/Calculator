@@ -1,5 +1,6 @@
 using CalculatorApp;
 using NUnit.Framework;
+using System;
 
 namespace Calculator.Test.Unit
 {
@@ -119,6 +120,36 @@ namespace Calculator.Test.Unit
             double Result = uut.Divide(10, 0);
             //Assert
             Assert.That(Result, Is.EqualTo(0));
+        }
+        [Test]
+        public void Calculator_SquareRoot2()
+        {
+            //Arrange
+
+            //Act
+            double Result = uut.SquareRoot(2);
+            //Assert
+            Assert.That(Result, Is.EqualTo(Math.Sqrt(2)));
+        }
+        [Test]
+        public void Calculator_SquareRootNeg8()
+        {
+            //Arrange
+
+            //Act
+            double Result = uut.SquareRoot(-8);
+            //Assert
+            Assert.That(Result, Is.EqualTo(Math.Sqrt(8)));
+        }
+        [Test]
+        public void Calculator_SquareRoot100()
+        {
+            //Arrange
+
+            //Act
+            double Result = uut.SquareRoot(100);
+            //Assert
+            Assert.That(Result, Is.EqualTo(10));
         }
     }
 }
