@@ -29,7 +29,7 @@ namespace CalculatorApp
         {
             return Math.Pow(x, exp);
         }
-        public double divide(double a, double b)
+        public double Divide(double a, double b)
         {
             if (b == 0)
                 return 0;

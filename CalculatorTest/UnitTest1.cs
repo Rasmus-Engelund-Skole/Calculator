@@ -95,7 +95,7 @@ namespace Calculator.Test.Unit
             //Arrange
 
             //Act
-            double Result = uut.divide(10, 2);
+            double Result = uut.Divide(10, 2);
 
             //Assert
             Assert.That(Result, Is.EqualTo(5));
@@ -106,7 +106,7 @@ namespace Calculator.Test.Unit
             //Arrange
 
             //Act
-            double Result = uut.divide(10, -5);
+            double Result = uut.Divide(10, -5);
             //Assert
             Assert.That(Result, Is.EqualTo(-2));
         }
@@ -116,7 +116,7 @@ namespace Calculator.Test.Unit
             //Arrange
 
             //Act
-            double Result = uut.divide(10, 0);
+            double Result = uut.Divide(10, 0);
             //Assert
             Assert.That(Result, Is.EqualTo(0));
         }
