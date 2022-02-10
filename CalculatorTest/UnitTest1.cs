@@ -6,7 +6,7 @@ namespace Calculator.Test.Unit
 {
     public class Tests
     {
-        //Random comment
+        //Random comment added
 
         private CalculatorApp.Calculator uut;
         [SetUp]
