@@ -36,8 +36,13 @@ namespace CalculatorApp
             else
                 return a / b;
         }
-        public double Square(double d)
-        { 
+        public double SquareRoot(double d)
+        {
+            if (d < 0)
+            {
+                d = Math.Abs(d);
+
+            }
             return Math.Sqrt(d); 
         }
     }

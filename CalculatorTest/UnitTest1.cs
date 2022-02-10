@@ -1,11 +1,12 @@
 using CalculatorApp;
 using NUnit.Framework;
+using System;
 
 namespace Calculator.Test.Unit
 {
     public class Tests
     {
-        private  CalculatorApp.Calculator uut;
+        private CalculatorApp.Calculator uut;
         [SetUp]
         public void Setup()
         {
@@ -20,8 +21,8 @@ namespace Calculator.Test.Unit
             //Act
             double Result = uut.Add(2.22, 5.22);
             //Assert
-           
-            Assert.That(Result, Is.EqualTo(2.22+5.22));
+
+            Assert.That(Result, Is.EqualTo(2.22 + 5.22));
         }
 
         [Test]
@@ -32,7 +33,7 @@ namespace Calculator.Test.Unit
             //Act
             double Result = uut.Add(2.22, -5.22);
             //Assert
-            Assert.That(Result, Is.EqualTo(2.22-5.22));
+            Assert.That(Result, Is.EqualTo(2.22 - 5.22));
         }
 
         [Test]
@@ -41,9 +42,42 @@ namespace Calculator.Test.Unit
             //Arrange
 
             //Act
+            double Result = uut.Subtract(2.22, 5.22);
+            //Assert
+            Assert.That(Result, Is.EqualTo(2.22 - 5.22));
+        }
+
+        [Test]
+        public void Calculator_subtract2positives()
+        {
+            //Arrange
+
+            //Act
             double Result = uut.Add(-2.22, -5.22);
             //Assert
-            Assert.That(Result, Is.EqualTo(-2.22+-5.22));
+            Assert.That(Result, Is.EqualTo(-2.22 + -5.22));
+        }
+
+        [Test]
+        public void Calculator_subtract_onepositive_onenegative()
+        {
+            //Arrange
+
+            //Act
+            double Result = uut.Subtract(2.22, -5.22);
+            //Assert
+            Assert.That(Result, Is.EqualTo(2.22 - -5.22));
+        }
+
+        [Test]
+        public void Calculator_subtract_2negatives()
+        {
+            //Arrange
+
+            //Act
+            double Result = uut.Subtract(-2.22, -5.22);
+            //Assert
+            Assert.That(Result, Is.EqualTo(-2.22 - -5.22));
         }
 
         [Test]
@@ -142,6 +176,36 @@ namespace Calculator.Test.Unit
             double Result = uut.Divide(10, 0);
             //Assert
             Assert.That(Result, Is.EqualTo(0));
+        }
+        [Test]
+        public void Calculator_SquareRoot2()
+        {
+            //Arrange
+
+            //Act
+            double Result = uut.SquareRoot(2);
+            //Assert
+            Assert.That(Result, Is.EqualTo(Math.Sqrt(2)));
+        }
+        [Test]
+        public void Calculator_SquareRootNeg8()
+        {
+            //Arrange
+
+            //Act
+            double Result = uut.SquareRoot(-8);
+            //Assert
+            Assert.That(Result, Is.EqualTo(Math.Sqrt(8)));
+        }
+        [Test]
+        public void Calculator_SquareRoot100()
+        {
+            //Arrange
+
+            //Act
+            double Result = uut.SquareRoot(100);
+            //Assert
+            Assert.That(Result, Is.EqualTo(10));
         }
     }
 }
