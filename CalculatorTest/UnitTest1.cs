@@ -6,6 +6,8 @@ namespace Calculator.Test.Unit
 {
     public class Tests
     {
+        //Random comment
+
         private CalculatorApp.Calculator uut;
         [SetUp]
         public void Setup()
