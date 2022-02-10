@@ -68,5 +68,15 @@ namespace Calculator.Test.Unit
             Assert.That(Result, Is.EqualTo(125));
         }
 
+        [Test]
+        public void Calculator_PowerOf7()
+        {
+            //Arrange
+
+            //Act
+            double Result = uut.Power(5, 7);
+            //Assert
+            Assert.That(Result, Is.EqualTo(78125));
+        }
     }
 }
