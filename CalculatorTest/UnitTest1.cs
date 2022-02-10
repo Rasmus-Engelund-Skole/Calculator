@@ -6,7 +6,7 @@ namespace Calculator.Test.Unit
 {
     public class Tests
     {
-        private  CalculatorApp.Calculator uut;
+        private CalculatorApp.Calculator uut;
         [SetUp]
         public void Setup()
         {
@@ -21,8 +21,8 @@ namespace Calculator.Test.Unit
             //Act
             double Result = uut.Add(2.22, 5.22);
             //Assert
-           
-            Assert.That(Result, Is.EqualTo(2.22+5.22));
+
+            Assert.That(Result, Is.EqualTo(2.22 + 5.22));
         }
 
         [Test]
@@ -33,7 +33,51 @@ namespace Calculator.Test.Unit
             //Act
             double Result = uut.Add(2.22, -5.22);
             //Assert
-            Assert.That(Result, Is.EqualTo(2.22-5.22));
+            Assert.That(Result, Is.EqualTo(2.22 - 5.22));
+        }
+
+        [Test]
+        public void Calculator_AddTwoNegative()
+        {
+            //Arrange
+
+            //Act
+            double Result = uut.Subtract(2.22, 5.22);
+            //Assert
+            Assert.That(Result, Is.EqualTo(2.22 - 5.22));
+        }
+
+        [Test]
+        public void Calculator_subtract2positives()
+        {
+            //Arrange
+
+            //Act
+            double Result = uut.Add(-2.22, -5.22);
+            //Assert
+            Assert.That(Result, Is.EqualTo(-2.22 + -5.22));
+        }
+
+        [Test]
+        public void Calculator_subtract_onepositive_onenegative()
+        {
+            //Arrange
+
+            //Act
+            double Result = uut.Subtract(2.22, -5.22);
+            //Assert
+            Assert.That(Result, Is.EqualTo(2.22 - -5.22));
+        }
+
+        [Test]
+        public void Calculator_subtract_2negatives()
+        {
+            //Arrange
+
+            //Act
+            double Result = uut.Subtract(-2.22, -5.22);
+            //Assert
+            Assert.That(Result, Is.EqualTo(-2.22 - -5.22));
         }
 
         [Test]
@@ -57,6 +101,18 @@ namespace Calculator.Test.Unit
             //Assert
             Assert.That(Result, Is.EqualTo(-15));
         }
+
+        [Test]
+        public void Calculator_Multiply2Negative()
+        {
+            //Arrange
+
+            //Act
+            double Result = uut.Multiply(-3, -5);
+            //Assert
+            Assert.That(Result, Is.EqualTo(15));
+        }
+
 
         [Test]
         public void Calculator_PowerOf3()
