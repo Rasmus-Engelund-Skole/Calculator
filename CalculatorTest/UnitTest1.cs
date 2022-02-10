@@ -69,6 +69,18 @@ namespace Calculator.Test.Unit
         }
 
         [Test]
+        public void Calculator_Multiply2Negative()
+        {
+            //Arrange
+
+            //Act
+            double Result = uut.Multiply(-3, -5);
+            //Assert
+            Assert.That(Result, Is.EqualTo(15));
+        }
+
+
+        [Test]
         public void Calculator_PowerOf3()
         {
             //Arrange
