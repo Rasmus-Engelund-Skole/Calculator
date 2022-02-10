@@ -111,14 +111,14 @@ namespace Calculator.Test.Unit
             Assert.That(Result, Is.EqualTo(2));
         }
         [Test]
-        public void Calculator_DivideBy10()
+        public void Calculator_DivideBy0()
         {
             //Arrange
 
             //Act
-            double Result = uut.divide(10, 10);
+            double Result = uut.divide(10, 0);
             //Assert
-            Assert.That(Result, Is.EqualTo(1));
+            Assert.That(Result, Is.EqualTo(0));
         }
     }
 }
