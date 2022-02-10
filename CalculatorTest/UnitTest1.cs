@@ -78,6 +78,17 @@ namespace Calculator.Test.Unit
             //Assert
             Assert.That(Result, Is.EqualTo(78125));
         }
+
+        [Test]
+        public void Calculator_PowerOf_minus3()
+        {
+            //Arrange
+
+            //Act
+            double Result = uut.Power(5, -3);
+            //Assert
+            Assert.That(Result, Is.EqualTo(0.008));
+        }
         [Test]
         public void Calculator_DivideBy2()
         {
